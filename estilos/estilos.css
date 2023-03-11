@@ -1,0 +1,229 @@
+@charset "utf-8";
+/*GENERAL DE LA PAGINA*/
+* {
+    border: 1px solid white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*-------------------------------------------------*/
+/*CONTENEDOR DEL BODY EN GENERAL*/
+#container{
+    width: 100%;
+}
+/*-------------------------------------------------*/
+/*ENCABEZADO*/
+header {
+    width: 100%;
+    height: 600px;
+    margin: 0px;
+    background: url(/images/header-logo.png),linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(196,166,162,0) 78%), linear-gradient(0deg, #642A00 0%, rgba(255, 255, 255, 0) 10%),url(/images/header-fondo.png);
+    background-repeat: no-repeat;
+    background-size: 75%,cover,cover,cover;
+    background-position: top 300% center,center,center,center;
+}
+/*-------------------------------------------------*/
+/*MENU NAVEGACION*/
+/*CARACTERISTICAS GENERALES DEL MENU*/
+nav{
+    background-color:#642A00;
+    position: relative;
+    padding: 25px 0px;
+}
+/*CARACTERISTICA INPUT PARA RESPONSIVE LAYOUT - MOVILES*/
+/*IMAGEN LOGO DEL MENU*/
+.menu-logo{
+    transform: scale(1.5);
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    background: none;
+}
+/*CUANDO EL CURSOR ESTA SOBRE LA IMAGEN DEL MENU*/
+.menu-logo:hover{
+    background: none;
+    transition: .3s;
+    transform: scale(2);
+}
+/*CARACTERISTICAS DEL CONTENEDOR DE LAS OPCIONES DEL MENU*/
+nav ul{
+    width: 60%;
+    transition: .3s;
+}
+/*CARACTERISTICAS INICIALES DEL TEXTO EN EL MENU*/
+nav ul li a{
+    color: black;
+    font-weight: bold;
+}
+/*QUE OCURRE CUANDO EL CURSOR PARA SOBRE EL TEXTO DEL MENU*/
+nav ul li a:hover{
+    color: white;
+}
+nav ul li:nth-child(3){
+    margin-left: 50px;
+    margin-right: 50px;
+}
+/*ESPACIADO ENTRE CADA OPCION DEL MENU DENTRO DEL CONTENEDOR*/
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: auto;
+}
+/*-------------------------------------------------*/
+/*BOTONES DEL MENU Y POSIBLEMNTE OTROS BOTONES*/
+/*CARACTERISTICAS BOTON GENERAL - PARA TODA LA PAGINA*/
+a{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: large;
+    transition: .3s;
+    color: black;
+    font-weight: bold;
+    background: #E59700;
+    padding: 10px 20px;
+    text-align: center;
+}
+/*QUE PASARA AL PASAR EL CURSOR SOBRE EL BOTON*/
+a:hover{
+    color: white;
+    background: #FFD600;
+}
+/*-------------------------------------------------*/
+/*SEPARADOR ESPECIAL ENTRE ENCABEZADO, MENU, CONTENIDO Y PIE DE PAGINA*/
+.clearfix{
+    clear:both;
+    padding: 30px;
+    background-color: #642A00;
+}
+/*-------------------------------------------------*/
+/*CONTENIDO ENTRE ENCABEZADO,MENU Y PIE DE PAGINA*/
+/*CONTENT ES LA PALABRA CLAVE PARA EL BODY HTML*/
+#content{
+    float:left;
+    width: 100%;
+    background-color:#642A00;
+    color: white;
+    font-size:xx-large;
+}
+/*CONTENIDO-BODY SERA LA INFORMACION CENTRADA EN LA PAGINA WEB (REVISAR FIGMA)*/
+.contenido-body{
+    max-width: 600px;
+    margin: auto;
+}
+/*CONTENIDO BODY DE INDEX/INICIO*/
+/*IMAGEN CENTRADA EN BODY - SE PUEDE APLICAR PARA OTRAS PAGINAS WEB*/
+.imagen-centrada{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imagen-centrada .boton-saber-mas {
+    position: absolute;
+    margin-top: 35%;
+}
+.imagen-centrada img{
+    background:linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(196,166,162,0) 78%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.imagen-centrada  p{
+    box-sizing: content-box;
+    position: absolute;
+    margin-top: -26%;
+    margin-left: -270px;
+    max-width: 650px;
+}
+/*CARACTERISTICAS BODY PARA LAS PAGINA - QUIENES SOMOS*/
+
+/*-------------------------------------------------*/
+/*FOOTER - PIE DE PAGINA*/
+footer{
+    width: 100%;
+    padding: 10px 0px;
+    background: #1D1D1D;    
+}
+/*LINEA SEPARADORA DEL FOOTER - SEPARADOR DE COLUMNAS*/
+.linea-footer {
+    display: flex;
+    flex-direction: column;
+    padding: 1px;
+    height: 200px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #FFC195;
+}
+/*DISEÑO FILA QUE CONTIENE LAS COLUMNAS DEL FOOTER*/
+.footer-fila{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    max-width: 1300px;
+    margin: auto;
+}
+/*DISEÑO DE PROPORCION DE LAS COLUMNAS DEL FOOTER*/
+.footer-col{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background: #1D1D1D;
+    width: 400px;
+}
+/*CONTENIDO DE CADA COLUMNA DEL FOOTER*/
+/*COLUMNA IZQUIERDA DEL FOOTER*/
+.footer-col .nombre-logo img{
+    width: 380px;
+    margin: 0;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:10px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-col .texto-logo-izq{
+    max-width: 350px;
+    font-weight: 500;
+    font-size: larger;
+    text-align: center;
+    color: white;
+    position: absolute;
+    margin-top: 145px;
+    margin-left: 15px;
+}
+/*COLUMNA CENTRAL DEL FOOTER*/
+.footer-col .texto-boton-footer {
+    max-width: 350px;
+    font-weight: 550;
+    margin-top: 50px;
+    font-size:x-large;
+    text-align: center;
+    
+    color: white;
+}
+.footer-col .boton-entrar{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*COLUMNA DERECHA DEL FOOTER*/
+.footer-col .logo-footer img{
+    width: 120px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-col .redes-footer img{
+    width: 200px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
