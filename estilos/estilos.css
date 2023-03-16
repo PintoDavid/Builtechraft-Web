@@ -1,10 +1,11 @@
 @charset "utf-8";
 /*GENERAL DE LA PAGINA*/
 * {
-    border: 1px solid white;
+    border: 0px solid white;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    vertical-align: baseline;
 }
 /*-------------------------------------------------*/
 /*CONTENEDOR DEL BODY EN GENERAL*/
@@ -17,7 +18,7 @@ header {
     width: 100%;
     height: 600px;
     margin: 0px;
-    background: url(/images/header-logo.png),linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(196,166,162,0) 78%), linear-gradient(0deg, #642A00 0%, rgba(255, 255, 255, 0) 10%),url(/images/header-fondo.png);
+    background: url(/images/header-logo.png),linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(196,166,162,0) 78%), linear-gradient(0deg, #331805 0%, rgba(255, 255, 255, 0) 10%),url(/images/header-fondo.png);
     background-repeat: no-repeat;
     background-size: 75%,cover,cover,cover;
     background-position: top 300% center,center,center,center;
@@ -26,7 +27,8 @@ header {
 /*MENU NAVEGACION*/
 /*CARACTERISTICAS GENERALES DEL MENU*/
 nav{
-    background-color:#642A00;
+    /*background-color:#331805;*/
+    background-image: linear-gradient(#331805 70%,#642A00);
     position: relative;
     padding: 25px 0px;
 }
@@ -97,6 +99,48 @@ a:hover{
     padding: 30px;
     background-color: #642A00;
 }
+.contenido-body{
+    background-color: #642A00;
+    color: #1D1D1D;
+    
+}
+.contenido-body a {
+    text-decoration: none;
+}
+.contenido-body-index{
+    margin-left: 120px;
+    margin-right:120 px;
+    height: 90vh !important;
+    width: 75%;
+    background-image:  linear-gradient(90deg, rgba(0, 0, 0, 0.4) 0%, rgba(196,166,162,0) 15%), linear-gradient(270deg, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0) 15%),url(/images/inicio-saber-mas.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+   
+}
+.contenido-body-index a {
+    text-decoration: none;
+    justify-content:center;
+    
+}
+.tittle {
+    margin-top: 10px;
+    
+    font-size: 30px;
+    color: rgb(255, 238, 145);
+    text-shadow: 2px 2px 6px #1D1D1D;
+    
+    text-transform: uppercase;
+}
+p{
+    color: white;
+    margin: left 80px; ;
+    text-shadow: 2px 2px 6px #1D1D1D;
+    padding-left: 15px;
+}
+
+
 /*-------------------------------------------------*/
 /*CONTENIDO ENTRE ENCABEZADO,MENU Y PIE DE PAGINA*/
 /*CONTENT ES LA PALABRA CLAVE PARA EL BODY HTML*/
@@ -109,8 +153,17 @@ a:hover{
 }
 /*CONTENIDO-BODY SERA LA INFORMACION CENTRADA EN LA PAGINA WEB (REVISAR FIGMA)*/
 .contenido-body{
-    max-width: 600px;
+    max-width: 70%;
     margin: auto;
+    padding: 10px 10px;
+    justify-content: center;
+    
+}
+.seccion-1{
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+    justify-content: center;
 }
 /*CONTENIDO BODY DE INDEX/INICIO*/
 /*IMAGEN CENTRADA EN BODY - SE PUEDE APLICAR PARA OTRAS PAGINAS WEB*/
@@ -121,7 +174,7 @@ a:hover{
 }
 .imagen-centrada .boton-saber-mas {
     position: absolute;
-    margin-top: 35%;
+    margin-top: 75%;
 }
 .imagen-centrada img{
     background:linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(196,166,162,0) 78%);
@@ -150,7 +203,7 @@ footer{
     display: flex;
     flex-direction: column;
     padding: 1px;
-    height: 200px;
+    height: 100px;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 10px;
@@ -159,6 +212,7 @@ footer{
 }
 /*DISEÑO FILA QUE CONTIENE LAS COLUMNAS DEL FOOTER*/
 .footer-fila{
+    
     display: flex;
     flex-wrap: wrap;
     justify-content:center;
@@ -219,6 +273,7 @@ footer{
     display: flex;
     justify-content: space-between;
 }
+
 .footer-col .redes-footer img{
     width: 200px;
     margin-top: 10px;
