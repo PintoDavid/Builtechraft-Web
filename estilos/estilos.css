@@ -71,6 +71,7 @@ ul{
     justify-content: space-between;
     list-style: none;
     margin: auto;
+    flex-wrap: wrap;
 }
 /*-------------------------------------------------*/
 /*BOTONES DEL MENU Y POSIBLEMNTE OTROS BOTONES*/
@@ -101,7 +102,7 @@ a:hover{
 }
 .contenido-body{
     background-color: #642A00;
-    color: #1D1D1D;
+    color: #000000;
     
 }
 .contenido-body a {
