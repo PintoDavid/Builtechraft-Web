@@ -102,7 +102,11 @@ ul{
     justify-content: space-between;
     list-style: none;
     margin: auto;
+<<<<<<< HEAD
     flex-wrap: wrap;  
+=======
+    flex-wrap: wrap;
+>>>>>>> 624d9c6871b67cf753b86b0fd52855159ec489a1
 }
 /*-------------------------------------------------*/
 /*BOTONES DEL MENU Y POSIBLEMNTE OTROS BOTONES*/
