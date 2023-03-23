@@ -1,25 +1,30 @@
 <!DOCTYPE html>
+<!--ESTA ES LA PAGIAN WEB DEL SERVIDOR DE MINECRAFT BUILTECHRAFT-->
+<!--INICIO/HOME-->
 <html lang="es">
-<head>
-    <!--- Caracteres -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--- ICONOS -->
-    <!--- ... -->
-    <!--- ESTILOS CSS -->
-    <link rel="stylesheet" href="estilos/estilos.css"/>
-    <!--- Nombre pestana -->
-    <title>Builtechraft - Quienes somos</title>
-    <!--- Favicon/Icono de pestana -->
-    <link rel="icon" type="image/ico" href="./images/favicon.ico">
-</head>
+    <head>
+        <!--- Caracteres -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--- ICONOS -->
+        <!--- ... -->
+        <!--- ESTILOS CSS -->
+        <link rel="stylesheet" href="estilos/estilos.css"/>
+        <!--- Nombre pestana -->
+        <title>Builtechraft - Sitio oficial</title>
+        <!--- Favicon/Icono de pestana -->
+        <link rel="icon" type="image/ico" href="./images/favicon.ico">
+    </head>
     <body>
         <!-- se define el contenedor de todo el contenido
             del cuerpo visible de la pagina -->
         <div id="conteiner">
             <!-- cabecera de la pagina web -->
             <header>
+                <div class="builtcraft">
+                    <img class="logo-header" src="./images/header-logo.png" alt="btc-footer-redes">
+                </div>
                 <!-- solo tiene fondo de imagen -->
             </header>
             <!-- menu de la pagina -->
@@ -30,19 +35,19 @@
                     </a>-->
                     <!--MENU DE OPCIONES-->
                     <ul class="menuList">
-                        <li>
+                        <li class="menuOption">
                             <a href="quienes-somos.html">Quienes somos</a>
                         </li>
-                        <li>
+                        <li class="menuOption">
                             <a href="reglas.html">Reglas</a>
                         </li>
-                        <li>
-                            <a href="index.html" class="menu-logo"><img src="images/inicio-menu.png"></a>
-                        </li>
-                        <li>
+                        <li class="menu-logo">  
+                            <a href="index.html" ><img class="menu-logo" src="images/inicio-menu.png"></a>
+                        </li>                      
+                        <li class="menuOption">
                             <a href="noticias.html">Noticias</a>
-                        </li>
-                        <li>
+                        </li >
+                        <li class="menuOption">
                             <a href="#">Redes</a>
                         </li>
                     </ul>
@@ -53,11 +58,13 @@
             <!--======================================================-->
             <!-- contenido del body texto-imagenes-etc -->
             <section id="content">
+                <div class="box-container">
                 <div class="contenido-body">
+                    
                     <div class="seccion-1">
                     <!--- Imagen de Tarquitet -->
                     <br>
-                    <img src="./images/tarquitet.png" alt="tarquitet-view" width="464" height="432">
+                    <img class="image-seccion" src="./images/tarquitet.png" alt="tarquitet-view">
                     <!--- Texto al lado de Imagen de Tarquitet -->
                     <br>
                     <p class="texto-contenido">
@@ -80,14 +87,11 @@
                     "Buscar un sentido en cuánto al arte decorativo, immerviso y ambiental para nuestro mundo.
                     </p>
                     <div>
-                        <img src="./images/objetivo1.png" alt="objetivo-1" width="464" height="432">
+                        <img src="./images/objetivo1.png" alt="objetivo-1" >
                         <h6>
                             Créditos imagen: Hypnotic SMP"
                         </h6>
                     </div>
-                
-                    
-                
             </div>
             <div class="seccion-1">
                     <!--- Imagen de Objetivo 2 -->
@@ -108,7 +112,9 @@
                     <br>
                     
                     <br>
+                    <p class="texto-contenido2">
                     "Formar una comunidad para crecer y ayudarnos entre todos. Cada quién tiene sus habilidades."
+                    </p>
                     <!--- Imagen de Objetivo 4 -->
                     <img src="./images/objetivo3.png" alt="objetivo-3" width="464" height="432">
                     <!--- Texto al lado Imagen de Objetivo 3 -->
@@ -141,7 +147,7 @@
                 </div>
                 <a class="boton-timeline" href="#">"Ir al Timeline"</a>
                     <!--- Final del cuerpo -->
-                
+                </div> 
             </section>
             <!--======================================================-->
             <!-- etiqueta que ayudara a separar elementos -->
