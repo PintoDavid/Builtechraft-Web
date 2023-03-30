@@ -102,11 +102,7 @@ ul{
     justify-content: space-between;
     list-style: none;
     margin: auto;
-<<<<<<< HEAD
     flex-wrap: wrap;  
-=======
-    flex-wrap: wrap;
->>>>>>> 624d9c6871b67cf753b86b0fd52855159ec489a1
 }
 /*-------------------------------------------------*/
 /*BOTONES DEL MENU Y POSIBLEMNTE OTROS BOTONES*/
@@ -156,9 +152,9 @@ a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 90vh ;
+    
     width: 100%;
-    background-color: #E59700;
+   
     
 }
 .contenido-body-index{
@@ -211,10 +207,17 @@ p{
     margin: auto;
     padding: 10px 10px;
     justify-content: center;
+    flex-wrap: wrap;
     
 }
 .seccion-1{
     display: flex;
+    align-items: center;
+    padding: 10px 0px;
+    justify-content: center;
+}
+.seccion-2{
+    
     align-items: center;
     padding: 10px 0px;
     justify-content: center;
@@ -225,6 +228,15 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.image{
+    width: 100%;
+    height: 50vw;
+}
+.image2{
+    max-width: 55vw;
+    width: 95%;
+    height: 75%;
 }
 .imagen-centrada .boton-saber-mas {
     position: absolute;
@@ -256,7 +268,7 @@ p{
 
 /*-------------------------------------------------*/
 /*FOOTER - PIE DE PAGINA*/
-footer{
+footer{ 
     width: 100%;
     padding: 10px 0px;
     background: #1D1D1D;    
@@ -304,6 +316,9 @@ footer{
     justify-content: space-between;
 }
 .footer-col .texto-logo-izq{
+    display: flex;
+  
+    justify-content: center;
     max-width: 35vw;
     font-weight: 500;
     font-size: larger;
@@ -311,7 +326,7 @@ footer{
     color: white;
     position: absolute;
     margin-top: 145px;
-    margin-left: 15px;
+    margin-left: 3vw;
 }
 /*COLUMNA CENTRAL DEL FOOTER*/
 .footer-col .texto-boton-footer {
@@ -345,4 +360,7 @@ footer{
     margin-right: auto;
     display: flex;
     justify-content: space-between;
+}
+h6{
+    font-size: 1.5vw;  
 }
