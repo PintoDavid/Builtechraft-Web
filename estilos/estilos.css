@@ -162,6 +162,7 @@ a:hover{
     
     height: 90vh;
     width: 75%;
+    /*CORRECCION DE LA IAMGEN DEL BODY CENTRADO*/
     background-image:  linear-gradient(90deg, rgba(0, 0, 0, 0.4) 0%, rgba(196,166,162,0) 15%), linear-gradient(270deg, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0) 15%),url('../images/fondo1.png') ;
     background-repeat: no-repeat;
     background-size: cover;
