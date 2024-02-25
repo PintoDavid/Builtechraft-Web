@@ -1,4 +1,9 @@
-Página web para el servidor de Minecraft: Builtechraft SMP para la materia de tecnologías de internet 2023-1
+### Página web para el servidor de Minecraft: Builtechraft SMP
+------------
+> *Desarrollado por el jugador Tarquitet.*
 
-Builtechraft es un servidor con la modalidad supervivencia que tiene como objetivo construir un gran mundo con base en la creatividad y al mundo técnico del juego.
-Eso sí, no hay necesidad de ser un experto para colaborar en este proyecto.
+Builtechraft es un servidor privado de Minecraft con el objetivo de construir un mundo grande y épico mediante el uso de la ingeniería, codificación, arquitectura y el arte.
+
+[> Haz click aquí para visitar el anterior diseño de la página web<](http://https://github.com/PintoDavid/Old-Builtechraft-Site "> Haz click aquí para visitar el anterior diseño de la página web<")
+
+[> Click para ver - LA NUEVA PÁGINA WEB <](https://pintodavid.github.io/Builtechraft-Web/ "> Click para ver - LA NUEVA PÁGINA WEB <")
